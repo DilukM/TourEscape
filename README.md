@@ -23,7 +23,7 @@ To view the website locally:
 
 1. Clone this repository
 ```
-git clone https://github.com/yourusername/TourEscape.git
+git clone https://github.com/DilukM/TourEscape.git
 ```
 
 2. Navigate to the project directory

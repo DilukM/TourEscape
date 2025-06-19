@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // You can implement your own logic here, for example:
             // - Show a booking form
+            // - Redirect to a booking page
             // - Add to cart functionality
             // - Navigate to a booking page
             console.log(`Booking package: ${packageName}`);

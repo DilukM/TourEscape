@@ -81,4 +81,28 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+        // Add hover effects to social links
+    const socialLinks = document.querySelectorAll('.social-link');
+    socialLinks.forEach(link => {
+        link.addEventListener('mouseenter', () => {
+            link.style.transform = 'scale(1.2)';
+            link.style.backgroundColor = '#007bff';
+            link.style.color = 'white';
+        });
+
+        link.addEventListener('mouseleave', () => {
+            link.style.transform = 'scale(1)';
+            link.style.backgroundColor = '';
+            link.style.color = '';
+        });
+
+        // Add click handler for social links
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const platform = link.querySelector('i').className.split('-')[1];
+            console.log(`Opening ${platform} profile`);
+            // You can implement your own logic here for social media links
+        });
+    });
+
 }); 

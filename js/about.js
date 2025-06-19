@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const target = parseInt(value);
       let current = 0;
       const increment = target / 50; // Adjust speed of counting
-      const duration = 2000; // 2 seconds
+      const duration = 2000; // 2 second
       const interval = duration / 50;
 
       const counter = setInterval(() => {

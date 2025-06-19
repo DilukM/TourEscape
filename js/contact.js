@@ -81,6 +81,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+
+     // Add hover effects to contact details
+    const contactDetails = document.querySelectorAll('.contact-detail');
+    contactDetails.forEach(detail => {
+        detail.addEventListener('mouseenter', () => {
+            detail.style.transform = 'translateX(5px)';
+            const icon = detail.querySelector('i');
+            icon.style.color = '#007bff';
+        });
+
+        detail.addEventListener('mouseleave', () => {
+            detail.style.transform = 'translateX(0)';
+            const icon = detail.querySelector('i');
+            icon.style.color = '';
+        });
+    });
+    
         // Add hover effects to social links
     const socialLinks = document.querySelectorAll('.social-link');
     socialLinks.forEach(link => {

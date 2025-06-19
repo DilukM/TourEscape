@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TourEscape - Contact</title>
+    <link rel="stylesheet" href="../css/shared.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav-bar></nav-bar>
+
+    <section class="contact-hero">
+      <div class="hero-content">
+        <h1>Get in Touch with TourEscape</h1>
+        <p>We're here to help you plan your perfect trip. Reach out to us!</p>
+      </div>
+    </section>
+
+    <main class="main-content">
+      <div class="contact-container">
+        <div class="contact-grid">
+          <div class="contact-form">
+            <h3>Send us a Message</h3>
+            <form>
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Your Phone (Optional)</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  placeholder="Enter your phone number"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea
+                  id="message"
+                  placeholder="Type your message here"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="submit-button">Send Message</button>
+            </form>
+          </div>
+
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <div class="contact-details">
+              <div class="contact-detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="contact-detail-content">
+                  <h4>Our Office</h4>
+                  <p>123 Galle Road, Colombo 03, Sri Lanka</p>
+                </div>
+              </div>
+              <div class="contact-detail">
+                <i class="fas fa-phone"></i>
+                <div class="contact-detail-content">
+                  <h4>Phone Number</h4>
+                  <p>+94 11 234 5678</p>
+                </div>
+              </div>
+              <div class="contact-detail">
+                <i class="fas fa-envelope"></i>
+                <div class="contact-detail-content">
+                  <h4>Email Address</h4>
+                  <p>info@tourescape.lk</p>
+                </div>
+              </div>
+            </div>
+
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="#" class="social-link"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.789865860685!2d79.95787461026097!3d6.915708718453133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25726e571c433%3A0xe6e8ba439e8a3bf8!2sCINEC%20Campus%20(Pvt)%20Ltd!5e0!3m2!1sen!2slk!4v1750346358353!5m2!1sen!2slk"
+            width="100%"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer-component></footer-component>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("DEWq7OG1lFyc7Oq1m");
+      })();
+    </script>
+    <script src="../js/navbar.js" defer></script>
+    <script src="../js/footer.js" defer></script>
+    <script src="../js/contact.js" defer></script>
+  </body>
+</html>

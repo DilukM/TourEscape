@@ -3,9 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Packages</title>
+    <title>Travel Packages</title>
+    <link rel="stylesheet" href="../css/shared.css">
+    <link rel="stylesheet" href="../css/packages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Navigation -->
+     <nav-bar></nav-bar>
     
+     <section class="packages-hero">
+        <div class="hero-content">
+            <h1>Explore Our Exclusive Travel Packages</h1>
+            <p>Curated experiences for every traveler. Find your perfect getaway.</p>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <div class="packages-container">
+            <div class="packages-grid">
+
+                <!-- Packages Card 1: Basic Package -->
+                <div class="packages-card">
+                    <div class="package-badge">Budget Friendly</div>
+                    <div class="Package-image">
+                        <img src="../images/contact-hero.jpg" alt="Basic Package Image">
+                    </div>
+                    <div>
+                        <h3>Basic Package</h3>
+                        <p>Explore the essentials of travel with our budget-friendly package.</p>
+                        <div class="package-features">
+                            <div class="package-feature"><i class="fas fa-check"></i> 3 Days, 2 Nights</div>
+                            <div class="package-feature"><i class="fas fa-check"></i> Hotel Accommodation</div>
+                            <div class="package-feature"><i class="fas fa-check"></i> Breakfast Included</div>
+                            <div class="package-feature"><i class="fas fa-check"></i> City Tour</div>
+                        </div>
+                        <div class="package-price">
+                            <span class="price-tag">$499</span>
+                            <span class="duration">/per person</span>
+                            <a href="#" class="package-cta">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="package-duration">3 Days</div>
+                </div>
+
+                <!-- Packages Card 1: Premium Package -->
+                <div class="packages-card">
+                    <div class="package-badge">Premium Experience</div>
+                    <div class="Package-image">
+                        <img src="../images/contact-hero.jpg" alt="Premium Package Image">
+                    </div>
+                    <div>
+                        <h3>Premium Package</h3>
+                        <p>Indulge in luxury with our premium travel package.</p>
+                        <div class="package-features">
+                            <div class="package-feature"><i class="fas fa-check"></i> 5 Days, 4 Nights</div>
+                            <div class="package-feature"><i class="fas fa-check"></i> Luxury Hotel Accommodation</div>
+                            <div class="package-feature"><i class="fas fa-check"></i> All Meals Included</div>
+                            <div class="package-feature"><i class="fas fa-check"></i> Guided Tours</div>
+                        </div>
+                        <div class="package-price">
+                            <span class="price-tag">$999</span>
+                            <span class="duration">/per person</span>
+                            <a href="#" class="package-cta">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="package-duration">5 Days</div>
+                </div>
+
+                <!-- Packages Card 1: Family Package -->
+                <div class="packages-card">
+                    <div class="package-badge">Family Friendly</div>
+                    <div class="Package-image">
+                        <img src="../images/contact-hero.jpg" alt="Family Package Image">
+                    </div>
+                    <div>
+                        <h3>Family Package</h3>
+                        <p>Create unforgettable memories with our family-friendly package.</p>
+                        <div class="package-features">
+                            <div class="package-feature"><i class="fas fa-check"></i> 7 Days, 6 Nights</div>
+                            <div class="package-feature"><i class="fas fa-check"></i> Family Suite Accommodation</div>
+                            <div class="package-feature"><i class="fas fa-check"></i> Kids Activities Included</div>
+                            <div class="package-feature"><i class="fas fa-check"></i> Family Tours</div>
+                        </div>
+                        <div class="package-price">
+                            <span class="price-tag">$1499</span>
+                            <span class="duration">/per person</span>
+                            <a href="#" class="package-cta">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="package-duration">7 Days</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer-component></footer-component>
+
+    <!-- Scripts -->
+    <script src="../js/navbar.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="../js/packages.js" defer></script> 
 </body>
 </html>

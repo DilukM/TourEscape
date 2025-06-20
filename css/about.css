@@ -1,6 +1,7 @@
 /* About Page Styles */
-.about-hero {
 
+/* HERO IMAGE */
+.about-hero {
   height: 60vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/about-hero.jpg");
@@ -30,6 +31,21 @@
   animation: fadeInUp 1s ease-out;
 }
 
+/* RESPONSIVE ABOUT IMAGE */
+.about-image {
+  display: block;
+  margin: 0 auto 2rem auto;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  /* optional: add min/max width for better control */
+  max-width: 600px;
+}
+
+/* MAIN CONTENT */
 .about-container {
   max-width: 1200px;
   margin: -50px auto 0;
@@ -71,6 +87,7 @@
   font-size: 1.1rem;
 }
 
+/* STATS */
 .about-stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -103,6 +120,7 @@
   font-weight: 500;
 }
 
+/* TEAM MEMBER PHOTOS */
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -126,11 +144,13 @@
 .team-member img {
   width: 180px;
   height: 180px;
+  max-width: 100%;
   border-radius: 50%;
   margin-bottom: 1.5rem;
   object-fit: cover;
   border: 5px solid #f8f9fa;
   transition: border-color 0.3s ease;
+  aspect-ratio: 1/1;
 }
 
 .team-member:hover img {
@@ -179,6 +199,7 @@
   transform: translateY(-2px);
 }
 
+/* VALUES */
 .values-section {
   margin-top: 4rem;
 }
@@ -233,12 +254,12 @@
   line-height: 1.6;
 }
 
+/* Animations */
 @keyframes fadeInDown {
   from {
     opacity: 0;
     transform: translateY(-20px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
@@ -250,14 +271,14 @@
     opacity: 0;
     transform: translateY(20px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-@media (max-width: 768px) {
+/* RESPONSIVE QUERIES */
+@media (max-width: 1024px) {
   .about-hero {
     height: 50vh;
   }
@@ -266,12 +287,14 @@
     font-size: 2.5rem;
   }
 
-  .about-container {
-    padding: 0 1rem;
-  }
-
   .about-section {
     padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 0 1rem;
   }
 
   .about-stats {
@@ -285,5 +308,37 @@
   .values-grid {
     grid-template-columns: 1fr;
   }
+
+  .about-image {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    min-width: 0;
+  }
+
+  .team-member img {
+    width: 120px;
+    height: 120px;
+  }
 }
 
+@media (max-width: 480px) {
+  .about-section {
+    padding: 1rem;
+  }
+  .about-hero {
+    height: 35vh;
+    padding: 1rem;
+  }
+  .about-hero h1 {
+    font-size: 1.5rem;
+  }
+  .about-image {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  .team-member img {
+    width: 90px;
+    height: 90px;
+  }
+}

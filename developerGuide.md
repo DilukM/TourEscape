@@ -94,7 +94,7 @@ Types:
 
 ### Creating an Issue
 
-1. Go to the [Issues tab](https://github.com/your-username/TourEscape/issues)
+1. Go to the [Issues tab](https://github.com/DilukM/TourEscape/issues)
 2. Click "New Issue"
 3. Choose the appropriate template:
    - **Bug Report**: For reporting bugs
@@ -158,7 +158,7 @@ The project uses GitHub Pages for automatic deployment:
 
 - Main branch deploys to production automatically
 - All pushes to main trigger a new build
-- Live site: `https://your-username.github.io/TourEscape`
+- Live site: `https://dilukm.github.io/TourEscape`
 
 ### Manual Deployment Commands
 
@@ -247,20 +247,11 @@ Before you begin development, ensure you have:
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone <https://github.com/DilukM/TourEscape.git>
 cd TourEscape
 
-# Start development (choose one method)
-# Method 1: VS Code Live Server (recommended)
+# Start development
 # Install Live Server extension and right-click index.html
-
-# Method 2: Python simple server
-python -m http.server 8000
-
-# Method 3: Node.js live-server
-npx live-server --port=8080
-```
-
 ---
 
 ## 🛠️ Development Environment

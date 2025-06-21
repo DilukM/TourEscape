@@ -1,11 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TourEscape - Home</title>
+    <link rel="stylesheet" href="../css/shared.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav-bar></nav-bar>
+
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>Discover Your Next Adventure</h1>
+        <p>
+          Explore breathtaking destinations and create unforgettable memories
+        </p>
+        <a href="#features" class="cta-button">Start Exploring</a>
+      </div>
+    </section>
+
+    <main class="main-content">
+      <section class="features-section">
+        <div class="container">
+          <h2>Why Choose TourEscape?</h2>
+          <p class="section-description">
+            We offer unparalleled travel experiences tailored to your desires.
+          </p>
+          <div class="features-grid">
+            <div class="feature-card">
+              <i class="fas fa-globe-americas feature-icon"></i>
+              <h3>Global Destinations</h3>
+              <p>
+                Explore our carefully curated selection of worldwide
+                destinations, offering diverse cultures and landscapes.
+              </p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-hotel feature-icon"></i>
+              <h3>Luxury Stays</h3>
+              <p>
+                Experience comfort and luxury in our handpicked accommodations,
+                from boutique hotels to exotic resorts.
+              </p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-route feature-icon"></i>
+              <h3>Custom Tours</h3>
+              <p>
+                Create your perfect journey with our personalized tour packages,
+                designed to fit your unique interests.
+              </p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-headset feature-icon"></i>
+              <h3>24/7 Support</h3>
+              <p>
+                Enjoy peace of mind with our round-the-clock customer support,
+                always ready to assist you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer-component></footer-component>
+
+    <!-- Scripts -->
+    <script src="../js/navbar.js" defer></script>
+    <script src="../js/footer.js" defer></script>
+    <script src="../js/script.js" defer></script>
+    <script src="../js/home.js" defer></script>
+  </body>
 </html>

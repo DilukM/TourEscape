@@ -7,6 +7,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2025-06-22
+
+### Added
+
+- New attractive travel package images:
+
+### Changed
+
+- Enhanced travel packages page layout and alignment
+- Improved visual design of package cards with better spacing
+- Updated package card styling for better user experience
+- Restructured HTML markup for better semantic structure
+- Enhanced CSS styling for improved responsiveness
+
+### Fixed
+
+- Button alignment issues in travel packages section
+- Layout inconsistencies on packages page
+- Responsive design issues for package cards
+- Visual hierarchy improvements for package content
+
 ## [1.0.0] - 2024-12-19
 
 ### Added

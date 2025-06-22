@@ -1,7 +1,7 @@
 /* Packages Page Styles */
 .packages-hero {
     height: 60vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/packages-hero.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/packagecover.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -50,6 +50,9 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
+    flex-direction: column;
+    height: 100%;
+    min-height: 540px; /* Ensures all cards are the same height */
 }
 
 .package-card:hover {
@@ -58,9 +61,17 @@
 }
 
 .package-image {
-    height: 250px;
+    /* height: 250px;
+    overflow: hidden;
+    position: relative; */
+    height: 220px;
+    width: 100%;
     overflow: hidden;
     position: relative;
+    background: #f3f3f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .package-image img {
@@ -68,6 +79,7 @@
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease;
+    display:  block;
 }
 
 .package-card:hover .package-image img {
@@ -76,6 +88,10 @@
 
 .package-content {
     padding: 1.5rem;
+     flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .package-content h3 {
@@ -143,11 +159,12 @@
     text-decoration: none;
     border-radius: 25px;
     transition: all 0.3s ease;
+     margin-left: auto;
 }
 
 .package-cta:hover {
     background: #00a884;
-    transform: translateY(-2px);
+    transform: translateY(-4px);
 }
 
 .package-badge {
